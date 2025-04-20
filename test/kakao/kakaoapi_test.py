@@ -1,11 +1,21 @@
+import os
+
+from dotenv import load_dotenv
+
 from datakorea import kakaoapi
 
-REST_API_KEY = "REST API 키"
-REDIRECT_URI = "REDIRECT URI"
-kakao_id = "kakao 아이디"
-kakao_pw = "kakao 비밀번호"
 
 def test_kakaoapi():
+    load_dotenv()
+    REST_API_KEY = os.environ.get('API_KEY')
+    REDIRECT_URI = os.environ.get('REDIRECT_URI')
+    kakao_id = os.environ.get('KAKAO_ID')
+    kakao_pw = os.environ.get('KAKAO_PW')
+
+    print("rest api key : ", REST_API_KEY)
+    print("redirect uri : ", REDIRECT_URI)
+    print("kakao id : ", kakao_id)
+    print("kakao pw : ", kakao_pw)
 
     m_kakao = kakaoapi(REST_API_KEY, REDIRECT_URI, kakao_id, kakao_pw)
     print("kakaoapi 객체 생성 완료")
