@@ -30,21 +30,21 @@ kakaoapi는 사용자가 카카오톡 메시지를 보내는 기능을 제공합
 
   
 
-**API 설명**
+### API 설명
 
-**kakaoapi(api_key, redirect_uri ,kakaoId, kaakaoPw)**
+<span style="color: red;">**kakaoapi(api_key, redirect_uri ,kakaoId, kaakaoPw)**
 
-api_key : kakao api의 api key를 넣어줍니다.
-redirect_uri : kakao api에서 설정한 Redirect URI의 값을 넣어줍니다. 
-kakaoId : 카카오 계정 id를 넣어줍니다.
+api_key : kakao api의 api key를 넣어줍니다.  
+redirect_uri : kakao api에서 설정한 Redirect URI의 값을 넣어줍니다.  
+kakaoId : 카카오 계정 id를 넣어줍니다.  
 kaakaoPw : 카카오 계정 password를 넣어줍니다.
 
-**send_text_msg(text_)**
-text_ : 자신에게 보내는 text 메세지 내용입니다.
-  
-  
+<span style="color: red;">**send_text_msg(text_)**  
 
-## 사전설정
+text_ : 자신에게 보내는 text 메세지 내용입니다.  
+
+
+### 사전설정
 
 **카카오 developers 설정하기**
 
